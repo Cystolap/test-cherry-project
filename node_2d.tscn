@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://brbtgvv27bvlh"]
+
+[ext_resource type="Texture2D" uid="uid://d2vbrgx0yjc4u" path="res://Scripts/DinoSprites - vita.png" id="1_wtcfe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(14, 17)
+
+[node name="Node2D" type="Node2D" unique_id=1340129808]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1300722414]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=2851730]
+texture = ExtResource("1_wtcfe")
+hframes = 25
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1365296461]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_bhunq")
